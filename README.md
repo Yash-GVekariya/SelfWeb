@@ -57,12 +57,21 @@ A modern, elegant, and fully responsive personal portfolio website showcasing my
 ## 📸 Screenshots
 
 ### Desktop View
+<img width="1919" height="907" alt="Screenshot 2025-11-13 135733" src="https://github.com/user-attachments/assets/52c6e8e8-175b-42df-9f88-732cc6126f4a" />
 
 
 ### Mobile View
 *(Add screenshot here)*
 
 ### Theme Toggle
-*(Add screenshot here)*
+<img width="1919" height="907" alt="Screenshot 2025-11-13 135733" src="https://github.com/user-attachments/assets/52c6e8e8-175b-42df-9f88-732cc6126f4a" />
+<img width="1919" height="908" alt="Screenshot 2025-11-13 161039" src="https://github.com/user-attachments/assets/bf85b8f7-71ad-470e-b03b-5d4a53736db3" />
+
 
 ## 📁 Project Structure
+portfolio-website/
+│
+├── index.html # All HTML in one file
+├── styles.css # All CSS styles and animations
+├── script.js # JavaScript functionality
+└── README.md # Project documentation
