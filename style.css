@@ -366,7 +366,7 @@ body {
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
-.profile-image-container {
+/* .profile-image-container {
     position: relative;
     width: 150px;
     height: 150px;
@@ -384,6 +384,124 @@ body {
     padding: 30px;
     border: 4px solid var(--card-bg);
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+} */
+
+.profile-image-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* Responsive Profile Image and Hero Section */
+@media (max-width: 1024px) {
+    .profile-image-container {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .floating-element {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile-image {
+        border: 3px solid var(--card-bg);
+    }
+
+    .status-indicator {
+        width: 16px;
+        height: 16px;
+        bottom: 8px;
+        right: 8px;
+    }
+
+    .stat-card {
+        padding: 12px 8px !important;
+    }
+
+    .stat-card .text-2xl {
+        font-size: 1.25rem;
+    }
+
+    .tech-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .hero-shape {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-image {
+        border: 2px solid var(--card-bg);
+    }
+
+    .status-indicator {
+        width: 14px;
+        height: 14px;
+        bottom: 6px;
+        right: 6px;
+        border: 2px solid var(--card-bg);
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .typing-container {
+        font-size: 1.25rem !important;
+    }
+
+    .typing-text {
+        min-width: 180px;
+    }
 }
 
 .status-indicator {
